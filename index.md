@@ -1,5 +1,7 @@
 ---
 layout: page
+title: My Adventure In Code
+tagline: Posts
 ---
 
 ## Posts
