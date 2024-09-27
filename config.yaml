@@ -1,0 +1,25 @@
+baseURL = "https://raghurok.github.io/"
+languageCode = "en-us"
+title = "Raghu Ravi"
+theme = "yinyang"
+enableRobotsTXT = true
+pygmentsUseClasses = true
+
+[params.author]
+  email = ""
+  name = "Raghu Ravi"
+
+[params]
+  headTitle = "Raghu Ravi"
+  mainSections = ["blog"]
+  favicon = "/img/favicon.ico"
+  images = ["/img/belle-ile.jpg"]
+  description = "Raghu Ravi's blog"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5

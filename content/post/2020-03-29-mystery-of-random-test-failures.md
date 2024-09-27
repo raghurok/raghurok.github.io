@@ -1,9 +1,10 @@
 ---
-layout: post
-title: "Mystery of Random Test Failures"
+categories:
+- code
+date: "2020-03-29T00:00:00Z"
 description: ""
-category: "code"
 tags: []
+title: Mystery of Random Test Failures
 ---
 {% include JB/setup %}
 
