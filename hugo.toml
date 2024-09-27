@@ -15,7 +15,7 @@ pygmentsUseClasses = true
   mainSections = ["blogs"]
   favicon = "/img/favicon.ico"
   images = ["/img/belle-ile.jpg"]
-  description = "Raghu Ravi's blog"
+  description = ""
 
 [markup.goldmark.renderer]
   unsafe = true
