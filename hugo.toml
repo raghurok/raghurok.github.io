@@ -5,16 +5,17 @@ theme = "yinyang"
 enableRobotsTXT = true
 pygmentsUseClasses = true
 
+
 [params.author]
   email = ""
   name = "Raghu Ravi"
 
 [params]
   headTitle = "Raghu Ravi"
-  mainSections = ["blog"]
+  mainSections = ["blogs"]
   favicon = "/img/favicon.ico"
   images = ["/img/belle-ile.jpg"]
-  description = "Raghu Ravi's blog"
+  description = ""
 
 [markup.goldmark.renderer]
   unsafe = true

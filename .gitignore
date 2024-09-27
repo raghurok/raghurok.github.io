@@ -1,14 +1,6 @@
-_site/*
-_theme_packages/*
-.sass-cache/*
-.sass-cache/
-
-Thumbs.db
 .DS_Store
+.hugo_build.lock
 
 !.gitkeep
 
-.rbenv-version
-.rvmrc
-
-Gemfile.lock
+public
