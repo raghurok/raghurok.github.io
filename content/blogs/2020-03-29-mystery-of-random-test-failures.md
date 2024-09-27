@@ -1,12 +1,11 @@
 ---
 categories:
-- code
+- junit
 date: "2020-03-29T00:00:00Z"
 description: ""
-tags: []
+tags: [junit]
 title: Mystery of Random Test Failures
 ---
-{% include JB/setup %}
 
 ### Mystery of random failed tests
 
@@ -89,6 +88,5 @@ public class SomeTest {
     public static class TestConfig {      
        // some other config
     }
-
-
 }
+```
