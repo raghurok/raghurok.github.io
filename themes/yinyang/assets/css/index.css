@@ -106,6 +106,19 @@ a:hover {
   border-style: solid none none none;
 }
 
+.header-links {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: left;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.header-link {
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .lang-switch {
   font-weight: 600;
 }
@@ -119,6 +132,39 @@ a:hover {
 .posts-line {
   font-size: 1.2rem;
   margin: 12px 0;
+}
+
+.posts-line-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.posts-line-date {
+  color: gray;
+  font-size: 1rem;
+  padding-top: 3px;
+  font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "Courier", monospace;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.posts-line-tag {
+  color: gray;
+  border: 2px solid #eaecef;
+  border-radius: 8px;
+  padding: 4px 5px;
+  margin-top: 1px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "Courier", monospace;
+}
+
+.posts-line-subtitle {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .posts-categories {
@@ -168,18 +214,32 @@ a:hover {
   font-weight: 600;
 }
 
+.post-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
 .post-tags {
-  display: inline;
-  font-weight: 600;
-  padding: 2px 5px;
-  margin-right: 6px;
-  border: #000 2px solid;
-  border-radius: 5px;
+  color: gray;
+  border: 2px solid #eaecef;
+  border-radius: 8px;
+  padding: 4px 5px;
+  margin-top: 1px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "Courier", monospace;
 }
 
 .post-date {
-  font-weight: 800;
-  font-style: italic;
+  color: gray;
+  font-size: 1rem;
+  padding-top: 3px;
+  font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo",
+  "Courier", monospace;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
 }
 
 .post-author {

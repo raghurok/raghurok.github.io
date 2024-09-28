@@ -3,13 +3,11 @@ categories:
 - junit
 date: "2020-03-29T00:00:00Z"
 description: ""
-tags: [junit]
+tags: [junit, test]
 title: Mystery of Random Test Failures
 ---
-
-### Mystery of random failed tests
-
-On `mvn test` the tests were failing randomly. There was one thing common among all the test that failed, they were all intracting with a mocked spring bean. The exception stacktrace (shown below) was not very helpful. On re-running the failed test in IDE it always passed.  
+On `mvn test` the tests were failing randomly. There was one thing common among all the test that failed,
+they were all interacting with a mocked spring bean. The exception stacktrace (shown below) was not very helpful. On re-running the failed test in IDE it always passed.  
 
 ```java
 org.mockito.exceptions.misusing.UnfinishedVerificationException: 
