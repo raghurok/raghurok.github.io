@@ -13,7 +13,7 @@ pygmentsUseClasses = true
 [params]
   headTitle = "Raghu Ravi"
   mainSections = ["blogs"]
-  favicon = "/img/favicon.ico"
+  favicon = "favicon.ico"
   images = ["/img/belle-ile.jpg"]
   description = ""
 
