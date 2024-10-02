@@ -14,7 +14,7 @@ pygmentsUseClasses = true
   headTitle = "Raghu Ravi"
   mainSections = ["blogs"]
   favicon = "favicon.ico"
-  images = ["/img/belle-ile.jpg"]
+  images = []
   description = ""
 
 [markup.goldmark.renderer]
