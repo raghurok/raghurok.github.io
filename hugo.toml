@@ -16,6 +16,17 @@ pygmentsUseClasses = true
   favicon = "favicon.ico"
   images = []
   description = ""
+  extraHead = """
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YR0MEF6VVR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YR0MEF6VVR');
+  </script>
+  """
 
 [markup.goldmark.renderer]
   unsafe = true
