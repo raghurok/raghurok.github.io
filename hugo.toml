@@ -26,6 +26,9 @@ pygmentsUseClasses = true
 
     gtag('config', 'G-YR0MEF6VVR');
   </script>
+  <!-- GoatCounter -->
+  <script data-goatcounter="https://raghurok.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
   """
 
 [markup.goldmark.renderer]

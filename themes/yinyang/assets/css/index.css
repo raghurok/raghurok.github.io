@@ -214,6 +214,14 @@ a:hover {
   font-weight: 600;
 }
 
+.post-meta-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  padding-left: 0.5rem;
+}
+
 .post-tags-container {
   display: flex;
   flex-wrap: wrap;
@@ -229,6 +237,15 @@ a:hover {
   font-size: 0.9rem;
   white-space: nowrap;
   font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "Courier", monospace;
+}
+
+.post-views {
+  color: gray;
+  font-size: 0.95rem;
+  font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "Courier", monospace;
+  white-space: nowrap;
+  display: none;
+  align-items: center;
 }
 
 .post-date {

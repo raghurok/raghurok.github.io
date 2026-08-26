@@ -13,21 +13,22 @@
           <h1 class="post-title">{{ .Title }}</h1>
           {{ if in .Site.Params.mainSections .Type }}
           <div class="row post-desc">
-            <div class="col-xs-2">
+            <div class="post-meta-container">
               {{ if .Date }}
               <time class="post-date" datetime="{{ .Date.Format "2006-01-02 15:04:05 MST" }}">
                 {{ .Date.Format "2006-01-02" }}
               </time>
               {{ end }}
-            </div>
-            <div class="post-tags-container col-xs-6">
-              {{ range .Params.tags }}
-              <div>
-                <a class="post-tags" href="{{ site.LanguagePrefix }}/tags/{{ lower . | urlize }}/">
-                  {{ . }}
-                </a>
+              <span id="goatcounter-views" class="post-views"></span>
+              <div class="post-tags-container">
+                {{ range .Params.tags }}
+                <div>
+                  <a class="post-tags" href="{{ site.LanguagePrefix }}/tags/{{ lower . | urlize }}/">
+                    {{ . }}
+                  </a>
+                </div>
+                {{ end }}
               </div>
-              {{ end }}
             </div>
           </div>
           {{ end }}
@@ -65,6 +66,26 @@
   </article>
 
   {{ partial "scripts.html" . }}
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      var elem = document.getElementById('goatcounter-views');
+      if (!elem) return;
+      var path = encodeURIComponent(location.pathname);
+      fetch('https://raghurok.goatcounter.com/counter/' + path + '.json')
+        .then(function (response) {
+          if (!response.ok) return null;
+          return response.json();
+        })
+        .then(function (data) {
+          if (data && data.count !== undefined) {
+            var count = data.count || '0';
+            elem.innerText = '👁️ ' + count + (count === '1' ? ' view' : ' views');
+            elem.style.display = 'inline-flex';
+          }
+        })
+        .catch(function () {});
+    });
+  </script>
   {{ if .Site.Params.extraBody }}
   {{ .Site.Params.extraBody | safeHTML }}
   {{ end }}
